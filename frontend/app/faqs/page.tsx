@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Faqs } from "@/components/faqs/faqs";
 
 export const metadata: Metadata = {
-  title: "FAQs | Pharons Online" ,
+  title: "FAQs | Pharons Online",
 };
 
 export default async function FaqsPage() {

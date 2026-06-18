@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { RoomsBoard } from "@/components/rooms/rooms-board";
 
 export const metadata: Metadata = {
-  title: "Salas | Pharons Online" ,
+  title: "Salas | Pharons Online",
 };
 
 export default function RoomsPage() {

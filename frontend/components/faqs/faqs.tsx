@@ -83,7 +83,7 @@ export function Faqs() {
         <h1 className="faq-title">Videos Tutorial</h1>
         <iframe src="https://www.youtube.com/embed/XRSYSGB-IYw" width="1060" height="600" /></div>
         <span className="faq-divider"></span>
-        <iframe src="https://www.youtube.com/embed/aMiYb1Fjjw0" width="1060" height="601" />
+        <iframe src="https://www.youtube.com/embed/aMiYb1Fjjw0" width="1060" height="600" />
 
       <h2 className="faq-title">
           Preguntas Frecuentes

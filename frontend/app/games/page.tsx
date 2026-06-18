@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { GameCard } from "@/components/games/game-card";
 
 export const metadata: Metadata = {
-  title: "Juegos | Pharons Online" ,
+  title: "Juegos | Pharons Online",
 };
 
 const games = [
