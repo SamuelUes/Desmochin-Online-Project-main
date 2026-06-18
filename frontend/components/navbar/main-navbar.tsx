@@ -38,7 +38,7 @@ export function MainNavbar({ activeItem = null, user }: MainNavbarProps) {
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f7b832]/70 text-[#f7b832] shadow-[0_0_20px_rgba(247,184,50,0.2)]">
             <SpadeIcon className="h-5 w-5" />
           </span>
-          Pharons Online
+          Pharons Online 
         </Link>
 
         {user ? (

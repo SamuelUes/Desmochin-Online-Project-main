@@ -7,7 +7,7 @@ import { getCurrentAuthUser } from "@/lib/auth/current-user";
 import { serializeRequestCookies } from "@/lib/request-cookies";
 
 export const metadata: Metadata = {
-  title: "Perfil | Pharons Online",
+  title: "Perfil | Pharons Online" ,
 };
 
 export default async function ProfilePage() {

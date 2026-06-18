@@ -8,7 +8,7 @@ export function AuthBrand() {
       </span>
       <span className="leading-none">
         <span className="block text-xl font-extrabold tracking-normal">
-          Pharons Online
+          Pharons Online 
         </span>
         <span className="mt-1 block text-[13px] font-extrabold text-[#f7d273]">
           TU MESA, TUS REGLAS
