@@ -1,0 +1,19 @@
+{
+  "name": "desmochin-online-project",
+  "version": "1.0.0",
+  "description": "Proyecto Desmochin Online - Backend Express, Frontend Next.js, MongoDB en Docker",
+  "scripts": {
+    "setup": "npm run install:deps && npm run docker:build && npm run docker:up && npm run docker:logs",
+    "install:deps": "cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:logs": "docker-compose ps",
+    "start": "docker-compose up -d && docker-compose ps",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "clean": "docker-compose down -v --remove-orphans"
+  },
+  "keywords": ["desmochin", "docker", "express", "nextjs", "mongodb"],
+  "author": "",
+  "license": "ISC"
+}

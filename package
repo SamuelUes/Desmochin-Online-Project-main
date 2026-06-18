@@ -1,0 +1,12 @@
+{
+  "name": "desmochin-online-project",
+  "version": "1.0.0",
+  "description": "Desmochin Online Project - Docker Orchestration",
+  "scripts": {
+    "up": "docker-compose up --build -d && echo \"\n========================================\" && echo \"  CONTENEDORES INICIADOS\" && echo \"========================================\" && echo \"  Frontend:  http://localhost:3001\" && echo \"  Backend:   http://localhost:3000\" && echo \"  MongoDB:  localhost:5001\" && echo \"  Mongo UI:  http://localhost:8082\" && echo \"========================================\n\" && docker-compose ps",
+    "start": "docker-compose up -d && echo \"\n========================================\" && echo \"  CONTENEDORES INICIADOS\" && echo \"========================================\" && echo \"  Frontend:  http://localhost:3001\" && echo \"  Backend:   http://localhost:3000\" && echo \"  MongoDB:  localhost:5001\" && echo \"  Mongo UI:  http://localhost:8082\" && echo \"========================================\n\" && docker-compose ps",
+    "down": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "ps": "docker-compose ps"
+  }
+}

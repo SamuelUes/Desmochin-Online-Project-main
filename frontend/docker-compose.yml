@@ -1,0 +1,45 @@
+services:
+  app:
+    build:
+      context: .
+    command: npm run dev -- --hostname 0.0.0.0
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      AUTH_SECRET: ${AUTH_SECRET:-dev-secret-change-me-with-at-least-32-chars}
+      HOSTNAME: 0.0.0.0
+      MONGODB_URI: mongodb://mongo:27017/condega-casino
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/.next
+      - /app/node_modules
+
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: condega-casino
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mongosh",
+          "--quiet",
+          "--eval",
+          "db.adminCommand('ping').ok",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 5s
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

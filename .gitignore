@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Docker local data
+database/mongo-data/
+database/.mongodb/
+
+# Build output
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
